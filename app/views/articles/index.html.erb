@@ -1,4 +1,4 @@
-<h1>Listing articles</h1>
+<h1>Hello, Rails!</h1>
  
 <table>
   <tr>
@@ -10,7 +10,8 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
+      <%= link_to 'My Blog', controller: 'articles' %>
     </tr>
   <% end %>
+  <%= link_to 'New article', new_article_path %>
 </table>
